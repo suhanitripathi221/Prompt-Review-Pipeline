@@ -29,7 +29,7 @@ outputType = "webview"
 
 [[workflows.workflow.tasks]]
 task = "shell.exec"
-args = "streamlit run app.py --server.port 5000 --server.address 0.0.0.0 --server.headless true --server.showEmailPrompt false --browser.gatherUsageStats false"
+args = "streamlit run app.py --server.port 5000 --server.address 0.0.0.0 --server.headless true --server.showEmailPrompt false --server.enableCORS false --server.enableWebsocketCompression false --browser.gatherUsageStats false"
 waitForPort = 5000
 
 [agent]
